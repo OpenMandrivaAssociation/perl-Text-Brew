@@ -15,7 +15,6 @@ Source:         http://www.cpan.org/modules/by-module/Text/%{module}-%{version}.
 BuildRequires:  perl-devel
 %endif
 BuildArch:      noarch
-BuildRoot:      %{_tmppath}/%{name}-%{version}
 
 %description
 This module implements the Brew edit distance that is very close to the dynamic

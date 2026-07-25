@@ -2,14 +2,14 @@
 %define upstream_version 0.02
 
 Name:		perl-%{upstream_name}
-Version:	%perl_convert_version %{upstream_version}
-Release:	5
+Version:	%{upstream_version}
+Release:	6
 
 Summary:	An implementation of the Brew edit distance
 License:	GPL+ or Artistic
 Group:		Development/Perl
-Url:		https://search.cpan.org/dist/%{upstream_name}
-Source0:	http://www.cpan.org/modules/by-module/Text/%{upstream_name}-%{upstream_version}.tar.bz2
+Url:		https://metacpan.org/dist/Text-Brew
+Source0:	https://cpan.metacpan.org/authors/id/K/KC/KCIVEY/Text-Brew-%{upstream_version}.tar.gz
 
 BuildRequires:	make
 BuildRequires:	perl-devel

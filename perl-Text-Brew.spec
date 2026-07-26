@@ -1,15 +1,13 @@
 %define upstream_name    Text-Brew
-%define upstream_version 0.02
-
 Name:		perl-%{upstream_name}
-Version:	%{upstream_version}
-Release:	6
+Version:	0.02
+Release:	7
 
 Summary:	An implementation of the Brew edit distance
 License:	GPL+ or Artistic
 Group:		Development/Perl
 Url:		https://metacpan.org/dist/Text-Brew
-Source0:	https://cpan.metacpan.org/authors/id/K/KC/KCIVEY/Text-Brew-%{upstream_version}.tar.gz
+Source0:	https://cpan.metacpan.org/authors/id/K/KC/KCIVEY/Text-Brew-%{version}.tar.gz
 
 BuildRequires:	make
 BuildRequires:	perl-devel
@@ -23,7 +21,7 @@ about the Brew edit distance see:
 http://ling.ohio-state.edu/~cbrew/795M/string-distance.html
 
 %prep
-%setup -q -n %{upstream_name}-%{upstream_version}
+%setup -q -n %{upstream_name}-%{version}
 
 %build
 perl Makefile.PL INSTALLDIRS=vendor
@@ -48,9 +46,7 @@ make test
 
 * Sat Aug 01 2009 JÃ©rÃ´me Quelin <jquelin@mandriva.org> 0.20.0-1mdv2010.0
 + Revision: 405618
-- rebuild using %%perl_convert_version
-
-* Wed Jul 23 2008 Thierry Vignaud <tv@mandriva.org> 0.02-7mdv2009.0
+- rebuild using %0.02 Wed Jul 23 2008 Thierry Vignaud <tv@mandriva.org> 0.02-7mdv2009.0
 + Revision: 241987
 - rebuild
 - kill re-definition of %%buildroot on Pixel's request
